@@ -1,0 +1,87 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  font:normal 150% Roboto, sans-serif;
+  height: 100vh;
+  width:100%;
+  background-color:black;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.logo{
+  height: 30vh;
+  width:100%;
+  text-align:center;
+}
+.logo img{
+  height:100%;
+}
+.carousel{
+  height:250px;
+  width:80%;
+  position:relative;
+}
+.carousel .switchleft,
+.carousel .switchright{
+  color:white;
+  font-weight:bold;
+  height:100%;
+  width:45px;
+  line-height:250px;
+  top:0;
+  z-index:3;
+  background-color:#800000;
+  border-radius: 200px;
+  cursor: pointer;
+}
+.carousel .switchleft{
+  position:absolute;
+  left:-50px;
+}
+.carousel .switchright{
+  position:absolute;
+  right:-50px;
+}
+p{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#87CEEB;
+}
+a{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.carouselbox{
+  height:250px;
+  width:auto;
+  overflow:hidden;
+  white-space:nowrap;
+  display:inline-block;
+  text-align:center;
+  padding-bottom:10px;
+  display:flex;
+  align-items:center;
+}
+
+.carouselbox img{
+  min-width:147px;
+  max-width:147px;
+  height:200px;
+  background-size:cover;
+  background-color:lightgreen;
+  margin:5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index:2
+}
+.carouselbox img:hover{
+  transform:scale(1.4);
+  z-index:5;
+  cursor: auto;
+}
